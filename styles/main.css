@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -8,7 +14,9 @@ body {
 
 .firstscreen {
   height: 900px;
-  overflow: hidden;
+}
+.firstscreen .navbar .video {
+  display: none;
 }
 .firstscreen .video {
   width: 100%;
@@ -33,106 +41,27 @@ body {
   z-index: 20;
   top: -900px;
 }
-.firstscreen .header {
-  display: flex;
-  position: relative;
-  padding-left: 130px;
-  padding-right: 130px;
-  align-items: center;
-  z-index: 10;
-}
-.firstscreen .header .logo {
-  margin-left: 90px;
-}
-.firstscreen .header .menu {
-  width: auto;
-  margin-right: 231px;
-  justify-content: space-around;
-}
-.firstscreen .header .menu ul {
-  display: flex;
-  justify-content: space-between;
-}
-.firstscreen .header .menu ul li {
-  list-style: none;
-  margin-left: 40px;
-}
-.firstscreen .header .menu ul li a {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  color: #FFFFFF;
-  text-decoration: none;
-}
-.firstscreen .header .theme .picture {
-  display: flex;
-  position: relative;
-  top: -14px;
-  left: 12px;
-  z-index: 10;
-}
-.firstscreen .header .theme .picture img {
-  margin-right: 14px;
-}
-.firstscreen .header .theme input[type=checkbox] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  display: block;
-  position: relative;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  height: 1em;
-  width: 2em;
-  font-size: inherit;
-}
-.firstscreen .header .theme input[type=checkbox]:before, .firstscreen .header .theme input[type=checkbox]:after {
-  content: "";
-  display: block;
-  transition: 0.25s;
-  font-size: inherit;
-}
-.firstscreen .header .theme input[type=checkbox]:before {
-  position: relative;
-  width: 70px;
-  height: 30px;
-  background: rgba(217, 217, 217, 0.3);
-  border-radius: 28px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  border-radius: 28px;
-  z-index: 1;
-}
-.firstscreen .header .theme input[type=checkbox]:after {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 0;
-  border-radius: 50%;
-  background: #D9D9D9;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  z-index: 20;
-}
-.firstscreen .header .theme input[type=checkbox]:not(:checked):after {
-  left: 0;
-}
-.firstscreen .header .theme input[type=checkbox]:checked:after {
-  left: 40px;
-}
-.firstscreen .main-text {
+
+.main-text {
   margin-top: 200px;
-  justify-items: center;
 }
-.firstscreen .main-text h1 {
+.main-text .stretch-it .char {
+  transition: transform 0.5s cubic-bezier(0.8, 0, 0, 0.9);
+}
+.main-text .stretch-it:hover .char {
+  transform: scale(0.8, 0.8);
+}
+.main-text .stretch-it .char:hover {
+  transform: scale(0.9, 1.5);
+  transition-duration: 0.3s;
+  background: radial-gradient(44.35% 44.35% at 49.87% 55.65%, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.main-text .stretch-it.words.chars.splitting.active {
+  display: none;
+  transition: 1s;
+}
+.main-text h1 {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -140,8 +69,10 @@ body {
   line-height: 59px;
   text-align: center;
   color: #FFFFFF;
+  position: relative;
+  z-index: 0;
 }
-.firstscreen .main-text p {
+.main-text p {
   margin-top: 66px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -150,19 +81,25 @@ body {
   line-height: 39px;
   text-align: center;
   color: #FFFFFF;
+  transition: 1s;
 }
-.firstscreen .main-text .calculate-btn {
+.main-text p:hover {
+  transform: scale(1.2);
+}
+.main-text .calculate-btn {
   margin-top: 68px;
   display: flex;
   width: 360px;
   height: 70px;
-  background: #D20C83;
+  background: linear-gradient(to left, #0a015f, #b40087);
   border-radius: 20px;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  background-size: 200%;
+  transition: 0.5s;
 }
-.firstscreen .main-text .calculate-btn .text {
+.main-text .calculate-btn .text {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -174,8 +111,9 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.firstscreen .main-text .calculate-btn:hover {
+.main-text .calculate-btn:hover {
   cursor: pointer;
+  background-position: right;
 }
 
 .stack {
@@ -219,9 +157,6 @@ body {
   margin-left: 30px;
   margin-top: 20px;
 }
-.stack .first-block .items.cplus {
-  background: #964375;
-}
 .stack .second-block {
   display: flex;
   justify-content: center;
@@ -239,6 +174,10 @@ body {
   margin-left: 11px;
   margin-top: 14px;
   transform: rotate(45deg);
+}
+.stack .second-block .items img.plus {
+  margin-left: 12px;
+  margin-top: 36px;
 }
 .stack .second-block .items.tilda {
   background: #3A158A;
@@ -336,12 +275,12 @@ body {
 
 .director {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 200px;
+  justify-content: center;
 }
-.director .picture {
-  margin-left: 134px;
+.director .main {
+  display: flex;
+  margin-left: -170px;
 }
 .director .desc .greetings {
   width: 679px;
@@ -389,12 +328,18 @@ body {
   display: flex;
   width: 305px;
   height: 70px;
-  background: #0093C1;
+  background: linear-gradient(to left, #0099e0, #5ad4f3);
   border-radius: 20px;
   margin-right: 58px;
   text-align: center;
   align-items: center;
   justify-content: center;
+  background-size: 200%;
+  transition: 0.5s;
+}
+.director .desc .greetings .btn-block .tg:hover {
+  cursor: pointer;
+  background-position: right;
 }
 .director .desc .greetings .btn-block .tg a {
   font-family: "Montserrat";
@@ -411,11 +356,17 @@ body {
   display: flex;
   width: 305px;
   height: 70px;
-  background: #258403;
+  background: linear-gradient(to left, #26a100, #c3fcca);
   border-radius: 20px;
   text-align: center;
   align-items: center;
   justify-content: center;
+  background-size: 200%;
+  transition: 0.5s;
+}
+.director .desc .greetings .btn-block .wap:hover {
+  cursor: pointer;
+  background-position: right;
 }
 .director .desc .greetings .btn-block .wap a {
   font-family: "Montserrat";
@@ -453,6 +404,8 @@ body {
   width: 1092px;
   height: 706px;
   margin-bottom: 50px;
+  background-size: 200%;
+  transition: 0.5s;
 }
 .work .components .key .work-text {
   margin-top: 96px;
@@ -485,7 +438,7 @@ body {
   margin-bottom: 27px;
 }
 .work .components .key .work-text .zayav {
-  background: #6242A6;
+  background: linear-gradient(to left, #0a015f, #b40087);
   border-radius: 20px;
   width: 360px;
   height: 70px;
@@ -493,6 +446,12 @@ body {
   justify-content: center;
   align-items: center;
   float: right;
+  background-size: 200%;
+  transition: 0.5s;
+}
+.work .components .key .work-text .zayav:hover {
+  cursor: pointer;
+  background-position: right;
 }
 .work .components .key .work-text .zayav a {
   font-family: "Montserrat";
@@ -546,7 +505,7 @@ body {
   margin-bottom: 27px;
 }
 .work .components .it-out .work-text .zayav {
-  background: #6242A6;
+  background: linear-gradient(to left, #0a015f, #b40087);
   border-radius: 20px;
   width: 360px;
   height: 70px;
@@ -554,6 +513,12 @@ body {
   justify-content: center;
   align-items: center;
   float: left;
+  background-size: 200%;
+  transition: 0.5s;
+}
+.work .components .it-out .work-text .zayav:hover {
+  cursor: pointer;
+  background-position: right;
 }
 .work .components .it-out .work-text .zayav a {
   font-family: "Montserrat";
@@ -812,7 +777,7 @@ body {
   margin-bottom: 58px;
 }
 .zav .task textarea {
-  width: 1203px;
+  width: 100%;
   height: 292px;
   left: 200px;
   top: 8561px;
@@ -915,7 +880,7 @@ body {
   margin-top: 11px;
 }
 .zav .sending .btn {
-  background: #6242A6;
+  background: linear-gradient(to left, #0a015f, #b40087);
   border-radius: 20px;
   width: 360px;
   height: 70px;
@@ -923,6 +888,12 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 98px;
+  background-size: 200%;
+  transition: 0.5s;
+}
+.zav .sending .btn:hover {
+  cursor: pointer;
+  background-position: right;
 }
 .zav .sending .btn p {
   font-family: "Montserrat";
@@ -973,6 +944,12 @@ body {
   color: #FFFFFF;
   list-style: none;
   margin-bottom: 20px;
+}
+.footer .twoblock {
+  display: flex;
+}
+.footer .twoblock .threeblock {
+  display: flex;
 }
 .footer .solutions {
   margin-top: 50px;

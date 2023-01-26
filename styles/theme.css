@@ -1,0 +1,316 @@
+body.whiteTheme {
+  background-color: white;
+}
+body.whiteTheme .navbar .header .menu__item a {
+  color: #000;
+}
+body.whiteTheme .firstscreen .main-text h1 {
+  color: #ffffff;
+}
+body.whiteTheme .firstscreen .main-text p {
+  color: #000;
+  background: linear-gradient(161.5deg, #ffffff 49.5%, #000 43.49%, #000 103.11%, #ffffff 103.11%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body.whiteTheme .firstscreen .calculate-btn a {
+  color: #ffffff;
+}
+body.whiteTheme .stack .first-block .items {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  transform: rotate(-45deg);
+}
+body.whiteTheme .stack .first-block .items.py {
+  background-color: #000;
+}
+body.whiteTheme .stack .second-block .items {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  transform: rotate(-45deg);
+}
+body.whiteTheme .stack .second-block .items.js {
+  background: #FFB400;
+}
+body.whiteTheme .stack .second-block .items.dj {
+  background: #092E20;
+  border: 1px solid #FFFFFF;
+}
+body.whiteTheme .stack .second-block .items.tilda {
+  background: #3A158A;
+}
+body.whiteTheme .services .main .head {
+  color: #000000;
+}
+body.whiteTheme .services .main .cat .cat-item h1 {
+  color: #000000;
+}
+body.whiteTheme .services .main .cat .cat-item li {
+  color: #000000;
+}
+body.whiteTheme .services .main .cat .cat-item p {
+  color: #000000;
+}
+body.whiteTheme .services .main .cat .cat-item .price p {
+  color: #000000;
+}
+body.whiteTheme .director .main .greetings p {
+  color: #000000;
+}
+body.whiteTheme .work .components .head {
+  color: #000000;
+}
+body.whiteTheme .work .components .key {
+  background: rgba(54, 54, 70, 0.1);
+  box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
+body.whiteTheme .work .components .key .work-text h1 {
+  color: #000000;
+}
+body.whiteTheme .work .components .key .work-text li {
+  color: #000000;
+}
+body.whiteTheme .work .components .it-out {
+  background: rgba(54, 54, 70, 0.1);
+  box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
+body.whiteTheme .work .components .it-out .work-text h1 {
+  color: #000000;
+}
+body.whiteTheme .work .components .it-out .work-text li {
+  color: #000000;
+}
+body.whiteTheme .cases .head {
+  color: #000000;
+}
+body.whiteTheme .cases .case-items .example {
+  background: #D8D8DA;
+  box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
+body.whiteTheme .cases .case-items .example .desc h1 {
+  color: #000000;
+}
+body.whiteTheme .cases .case-items .example .desc p {
+  color: #000000;
+}
+body.whiteTheme .reviews .slider .swiper .swiper-wrapper .swiper-slide .desc p {
+  color: #000000;
+}
+body.whiteTheme .zav .main .head {
+  color: #000;
+}
+body.whiteTheme .zav .form .data .label {
+  color: #000;
+}
+body.whiteTheme .zav .main .form .data .block .main input {
+  border: 1px solid #000;
+  background-color: white;
+  color: #000;
+}
+body.whiteTheme .zav .main .form .data .block .main input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+body.whiteTheme .zav .main .form .data .block .main input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+body.whiteTheme .zav .main .form .data .block .main input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+body.whiteTheme .zav .form .services .block input[type=radio]::before {
+  background-color: rgb(243, 241, 241);
+  border: 1px solid #000;
+}
+body.whiteTheme .zav .form .services .block label {
+  color: #000;
+}
+body.whiteTheme .zav .task .label {
+  color: #000;
+}
+body.whiteTheme .zav .task textarea {
+  background-color: white;
+  border: 1px solid #000;
+  color: #000;
+}
+body.whiteTheme .zav .task textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+body.whiteTheme .zav .task textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+body.whiteTheme .zav .task textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+body.whiteTheme .zav .sending label {
+  color: #000;
+}
+body.whiteTheme .zav .sending input[type=checkbox]::before {
+  background-color: white;
+  border: 1px solid #000;
+}
+body.whiteTheme .zav .sending input[type=checkbox]::after {
+  border-radius: 10px;
+}
+body.whiteTheme .footer li {
+  color: #000;
+}
+body.whiteTheme .footer .head {
+  color: #000;
+}
+body.whiteTheme .footer p {
+  color: #000;
+}
+body.whiteTheme .footer .contact .cont ul li {
+  color: #000;
+}
+body.whiteTheme .category .main .head {
+  color: #000;
+}
+body.whiteTheme .category .main .categories .cat {
+  border: 1px solid #000;
+}
+body.whiteTheme .category .main .categories .cat p {
+  color: #000;
+}
+body.whiteTheme .blog .blog-items .item .desc h1 {
+  color: #000;
+}
+body.whiteTheme .blog .blog-items .item .desc p {
+  color: #000;
+}
+body.whiteTheme .case .main .container .desc p {
+  color: #000;
+}
+body.whiteTheme .case .main .head {
+  color: #000;
+}
+body.whiteTheme .portfolio .case-items .example .desc h1 {
+  color: #000;
+}
+body.whiteTheme .portfolio .case-items .example .desc p {
+  color: #000;
+}
+body.whiteTheme .partner .info .head {
+  color: #000;
+}
+body.whiteTheme .partner .info .kind .marketing h1 {
+  color: #000;
+}
+body.whiteTheme .partner .info .kind .marketing p {
+  color: #000;
+}
+body.whiteTheme .partner .info .kind .studio h1 {
+  color: #000;
+}
+body.whiteTheme .partner .info .kind .studio p {
+  color: #000;
+}
+body.whiteTheme .partner .coop h1 {
+  color: #000;
+}
+body.whiteTheme .partner .coop .menu ul li {
+  color: #000;
+}
+body.whiteTheme .partner .pay h1 {
+  color: #000;
+}
+body.whiteTheme .partner .pay li {
+  color: #000;
+}
+body.whiteTheme .form .main .head {
+  color: #000;
+}
+body.whiteTheme .form .textfield .first p {
+  color: #000;
+}
+body.whiteTheme .form .textfield .second p {
+  color: #000;
+}
+body.whiteTheme .reviews .head {
+  color: #000;
+}
+body.whiteTheme .menu__item span {
+  background-color: rgba(255, 255, 255, 0);
+}
+body.whiteTheme .form .main .textfield .first input {
+  background-color: #ffffff;
+  border: 1px solid #000;
+}
+body.whiteTheme .form .main .textfield .second input {
+  background-color: #ffffff;
+  border: 1px solid #000;
+}
+
+@media (max-width: 500px) {
+  body.whiteTheme .work .components {
+    background-color: #ffffff;
+  }
+  body.whiteTheme .work .components .key {
+    background: #ffffff;
+    box-shadow: #ffffff;
+  }
+  body.whiteTheme .work .components .it-out {
+    background: #ffffff;
+    box-shadow: #ffffff;
+  }
+}
+@media (max-width: 768px) {
+  .body.whiteTheme .menu__body {
+    background-color: #ffffff;
+  }
+  .body.whiteTheme .menu__list {
+    background-color: #ffffff;
+  }
+}
+@media (max-width: 1700px) {
+  .body.whiteTheme .firstscreen .main-text p {
+    color: #000;
+    background: linear-gradient(156deg, #ffffff 53%, #000 43.49%, #000 103.11%, #ffffff 103.11%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@media (max-width: 1700px) {
+  body.whiteTheme .firstscreen .main-text p {
+    color: #000;
+    background: linear-gradient(156deg, #ffffff 49%, #000 43.49%, #000 103.11%, #ffffff 103.11%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@media (max-width: 1250px) {
+  body.whiteTheme .firstscreen .main-text p {
+    color: #000;
+    background: linear-gradient(156deg, #ffffff 53%, #000 43.49%, #000 103.11%, #ffffff 103.11%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@media (max-width: 750px) {
+  body.whiteTheme .firstscreen .main-text p {
+    color: #000;
+    background: linear-gradient(140deg, #ffffff 45%, #000 43.49%, #000 103.11%, #ffffff 103.11%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@media (max-width: 550px) {
+  body.whiteTheme .firstscreen .main-text p {
+    color: #000;
+    background: linear-gradient(130deg, #ffffff 44%, #000 43.49%, #000 103.11%, #ffffff 103.11%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@media (max-width: 495px) {
+  body.whiteTheme .firstscreen .main-text p {
+    color: #000;
+    background: linear-gradient(130deg, #ffffff 100%, #000 43.49%, #000 103.11%, #ffffff 103.11%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}/*# sourceMappingURL=theme.css.map */

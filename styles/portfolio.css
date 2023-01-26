@@ -6,38 +6,8 @@ body {
   overflow-x: hidden;
 }
 
-.header {
-  display: flex;
-  position: relative;
-  padding-left: 130px;
-  padding-right: 130px;
-  align-items: center;
-  z-index: 10;
-}
-.header .logo {
-  margin-left: 90px;
-}
-.header .menu {
-  width: auto;
-  margin-right: 231px;
-  justify-content: space-around;
-}
-.header .menu ul {
-  display: flex;
-  justify-content: space-between;
-}
-.header .menu ul li {
-  list-style: none;
-  margin-left: 40px;
-}
-.header .menu ul li a {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  color: #FFFFFF;
-  text-decoration: none;
+.navbar .video {
+  display: none;
 }
 
 .theme .picture {
@@ -152,19 +122,20 @@ body {
   margin-left: -45px;
 }
 
-.portfolio a {
-  text-decoration: none;
-}
-.portfolio .head {
+.moreCase {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
   line-height: 59px;
-  text-align: center;
+  text-align: left;
   color: #FFFFFF;
   margin-top: 200px;
   margin-bottom: 130px;
+}
+
+.portfolio a {
+  text-decoration: none;
 }
 .portfolio .case-items {
   display: grid;
@@ -247,6 +218,12 @@ body {
   color: #FFFFFF;
   list-style: none;
   margin-bottom: 20px;
+}
+.footer .twoblock {
+  display: flex;
+}
+.footer .twoblock .threeblock {
+  display: flex;
 }
 .footer .solutions {
   margin-top: 50px;

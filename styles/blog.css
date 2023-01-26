@@ -6,101 +6,29 @@ body {
   overflow-x: hidden;
 }
 
-.header {
-  display: flex;
+.navbar .video {
+  display: none;
+}
+
+.video {
+  width: 100%;
+  height: 900px;
   position: relative;
-  padding-left: 130px;
-  padding-right: 130px;
-  align-items: center;
-  z-index: 10;
-}
-.header .logo {
-  margin-left: 90px;
-}
-.header .menu {
-  width: auto;
-  margin-right: 231px;
-  justify-content: space-around;
-}
-.header .menu ul {
-  display: flex;
-  justify-content: space-between;
-}
-.header .menu ul li {
-  list-style: none;
-  margin-left: 40px;
-}
-.header .menu ul li a {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  color: #FFFFFF;
-  text-decoration: none;
-}
-.header .theme .picture {
-  display: flex;
-  position: relative;
-  top: -14px;
-  left: 12px;
-  z-index: 10;
-}
-.header .theme .picture img {
-  margin-right: 14px;
-}
-.header .theme input[type=checkbox] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  display: block;
-  position: relative;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  height: 1em;
-  width: 2em;
-  font-size: inherit;
-}
-.header .theme input[type=checkbox]:before, .header .theme input[type=checkbox]:after {
-  content: "";
-  display: block;
-  transition: 0.25s;
-  font-size: inherit;
-}
-.header .theme input[type=checkbox]:before {
-  position: relative;
-  width: 70px;
-  height: 30px;
-  background: rgba(217, 217, 217, 0.3);
-  border-radius: 28px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  border-radius: 28px;
+  -webkit-clip-path: polygon(100% 0, 100% 31%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 31%, 0 100%, 0 0);
+  background: url("../assets/img/back.mp4");
   z-index: 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.header .theme input[type=checkbox]:after {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 0;
-  border-radius: 50%;
-  background: #D9D9D9;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  z-index: 20;
+.video #myVideo {
+  min-width: 100%;
+  min-height: 100%;
+  flex-shrink: 0;
 }
-.header .theme input[type=checkbox]:not(:checked):after {
-  left: 0;
-}
-.header .theme input[type=checkbox]:checked:after {
-  left: 40px;
-}
+
 .category {
   display: flex;
   justify-content: center;
@@ -116,6 +44,10 @@ body {
   font-size: 48px;
   line-height: 59px;
   color: #FFFFFF;
+}
+.category .main .head .color {
+  color: #3A158A;
+  background-color: rgba(255, 255, 255, 0);
 }
 .category .main .categories {
   margin-top: 80px;
@@ -259,6 +191,12 @@ body {
   color: #FFFFFF;
   list-style: none;
   margin-bottom: 20px;
+}
+.footer .twoblock {
+  display: flex;
+}
+.footer .twoblock .threeblock {
+  display: flex;
 }
 .footer .solutions {
   margin-top: 50px;

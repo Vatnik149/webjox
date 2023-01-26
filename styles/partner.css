@@ -6,101 +6,8 @@ body {
   overflow-x: hidden;
 }
 
-.header {
-  display: flex;
-  position: relative;
-  padding-left: 130px;
-  padding-right: 130px;
-  align-items: center;
-  z-index: 10;
-}
-.header .logo {
-  margin-left: 90px;
-}
-.header .menu {
-  width: auto;
-  margin-right: 231px;
-  justify-content: space-around;
-}
-.header .menu ul {
-  display: flex;
-  justify-content: space-between;
-}
-.header .menu ul li {
-  list-style: none;
-  margin-left: 40px;
-}
-.header .menu ul li a {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-.theme .picture {
-  display: flex;
-  position: relative;
-  top: -14px;
-  left: 12px;
-  z-index: 10;
-}
-.theme .picture img {
-  margin-right: 14px;
-}
-.theme input[type=checkbox] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  display: block;
-  position: relative;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  height: 1em;
-  width: 2em;
-  font-size: inherit;
-}
-.theme input[type=checkbox]:before, .theme input[type=checkbox]:after {
-  content: "";
-  display: block;
-  transition: 0.25s;
-  font-size: inherit;
-}
-.theme input[type=checkbox]:before {
-  position: relative;
-  width: 70px;
-  height: 30px;
-  background: rgba(217, 217, 217, 0.3);
-  border-radius: 28px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  border-radius: 28px;
-  z-index: 1;
-}
-.theme input[type=checkbox]:after {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 0;
-  border-radius: 50%;
-  background: #D9D9D9;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  z-index: 20;
-}
-.theme input[type=checkbox]:not(:checked):after {
-  left: 0;
-}
-.theme input[type=checkbox]:checked:after {
-  left: 40px;
+.navbar .video {
+  display: none;
 }
 
 .partner {
@@ -277,12 +184,18 @@ body {
 .form .btn {
   width: 263px;
   height: 70px;
-  background: #8D8D8D;
+  background: linear-gradient(to left, #0a015f, #b40087);
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  background-size: 200%;
+  transition: 0.5s;
+}
+.form .btn:hover {
+  cursor: pointer;
+  background-position: right;
 }
 .form .btn p {
   font-family: "Montserrat";
@@ -291,7 +204,7 @@ body {
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
 }
 .form .soc {
   margin-top: 75px;
@@ -314,8 +227,14 @@ body {
   width: 320px;
   height: 70px;
   margin-right: 20px;
-  background: #0093C1;
+  background: linear-gradient(to left, #0099e0, #5ad4f3);
   border-radius: 20px;
+  background-size: 200%;
+  transition: 0.5s;
+}
+.form .soc .tg:hover {
+  cursor: pointer;
+  background-position: right;
 }
 .form .soc .tg p {
   font-family: "Montserrat";
@@ -331,8 +250,14 @@ body {
   justify-content: center;
   width: 320px;
   height: 70px;
-  background: #258403;
+  background: linear-gradient(to left, #26a100, #c3fcca);
   border-radius: 20px;
+  background-size: 200%;
+  transition: 0.5s;
+}
+.form .soc .wa:hover {
+  cursor: pointer;
+  background-position: right;
 }
 .form .soc .wa p {
   font-family: "Montserrat";
@@ -383,6 +308,12 @@ body {
   color: #FFFFFF;
   list-style: none;
   margin-bottom: 20px;
+}
+.footer .twoblock {
+  display: flex;
+}
+.footer .twoblock .threeblock {
+  display: flex;
 }
 .footer .solutions {
   margin-top: 50px;
